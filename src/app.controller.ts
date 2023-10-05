@@ -13,11 +13,11 @@ export class AppController {
   // Controller는 url로의 요청을 받는다.
   @Get('/hello')
   sayHello(): string {
-    return 'Hello everyone';
+    return this.appService.sayHello();
   }
 
   @Post('/examplepost')
   postHello(): string {
-    return 'Hello everyone';
+    return this.appService.postHello();
   }
 }
